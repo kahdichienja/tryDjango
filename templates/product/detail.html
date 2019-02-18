@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {{ request.user.is_authenticated}}
+    <h1>{{ title  }}</h1>
+    <p>{{ description  }}</p>
+    <p>{{ summary  }}</p>
+    <span>{{ price  }}</span>
+
+{% endblock %}

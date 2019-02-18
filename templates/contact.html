@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1> contact view template</h1>
+    {{ request.user.is_authenticated}}
+    <p>
+        {{ my_text }}, {{ my_number }}
+    </p>
+    {% comment %} loops {% endcomment %}
+    <ul>
+        {% for item in my_list %}
+            <li>{{ item }} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
